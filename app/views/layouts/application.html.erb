@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Taskproject</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+
+        <li><%= link_to "Bugs", bugs_path %></li>
+        <li><%= link_to "Projects", projects_path %></li>
+        <li><%= link_to "Mainusers", mainusers_path %></li>
+        <li><%= link_to "user_projects", user_projects_path %></li>
+<li><%= link_to "Managers", managers_path %></li>
+
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>

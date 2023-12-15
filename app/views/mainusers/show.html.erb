@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @mainuser %>
+
+<div>
+  <%= link_to "Edit this mainuser", edit_mainuser_path(@mainuser) %> |
+  <%= link_to "Back to mainusers", mainusers_path %>
+
+  <%= button_to "Destroy this mainuser", @mainuser, method: :delete %>
+</div>
